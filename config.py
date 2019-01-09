@@ -1,14 +1,10 @@
-# android_desired_caps = {
-#     "build": "Python Android",
-#     "device": "Google Pixel",
-#     "app": "bs://<hashed app-id>"
-# }
 android_desired_caps = {
     "build": "Python Android",
     'device': 'Google Pixel',
-    'os_version': '8.0',
-    'appPackage': 'com.auth0sample',
-    'appActivity': 'com.auth0sample.MainActivity',
+    'os_version': '7.1',
+    'appPackage': 'com.auth0.samples',
+    'appActivity': 'com.auth0.samples.MainActivity',
+    'app': 'Auth0',
     'chromeOptions': {
         'androidPackage': 'com.android.chrome'
     }

@@ -1,3 +1,5 @@
+import time
+
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -19,7 +21,6 @@ class PageScreen:
         login_button.click()
 
         self.switch_context("WEBVIEW_chrome")
-
         textbox_username = WebDriverWait(self.driver.instance, 7000).until(
             EC.visibility_of_element_located((
                 MobileBy.XPATH, "//input[@name='username']"
@@ -44,7 +45,11 @@ class PageScreen:
 
     def switch_context(self, new_context):
 
+#TODO: Search dynamic wait for the context switch
+        time.sleep(5)
+
         c_context = self.driver.instance.mobile.contexts
+        print(c_context)
         self.driver.instance.switch_to.context(new_context)
 
     def fill_user_data(self, username, password):
@@ -61,9 +66,4 @@ class PageScreen:
         )
         alert_ok.click()
 
-        button_logged = WebDriverWait(self.driver.instance, 15).until(
-            EC.visibility_of_element_located((
-                MobileBy.XPATH, "//android.widget.Button"
-            ))
-        )
         return True
