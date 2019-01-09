@@ -21,8 +21,6 @@ ios_desired_caps = {
 login_user = "asdasd"
 login_password = "asdasd"
 
-# userName = "3lb3njy"
-# accessKey = "7978fef9-72c6-4fcc-bf32-d22581550349"
 
 userName = "benjaminlizardo2"
 accessKey = "2SP8isyH9azrD1sSsiCJ"
