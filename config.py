@@ -9,6 +9,15 @@ android_desired_caps = {
         'androidPackage': 'com.android.chrome'
     }
 }
+android_desired_caps_emulator = {
+    'platformName': 'android',
+    'deviceName': 'Nexus_6p',
+    'appPackage': 'com.auth0.samples',
+    'appActivity': 'com.auth0.samples.MainActivity',
+    'chromeOptions': {
+        'androidPackage': 'com.android.chrome'
+    }
+}
 
 ios_desired_caps = {
     "platformName": "iOS",
@@ -21,6 +30,3 @@ ios_desired_caps = {
 login_user = "asdasd"
 login_password = "asdasd"
 
-
-userName = "benjaminlizardo2"
-accessKey = "2SP8isyH9azrD1sSsiCJ"
