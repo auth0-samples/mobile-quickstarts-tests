@@ -1,6 +1,6 @@
 import unittest
 
-from page_screen_android import PageScreen
+from page_screen_ios import PageScreen
 from mobile_driver import Driver
 from os_enum import OSEnum
 
